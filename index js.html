@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+
+<body>
+    <h1 id="heading">This is the heading</h1>
+    <p>the paragraph</p>
+    <p>the paragraph1</p>
+    <div class="hi">this is the class elements</div>
+    <div class="hi">this is the class elements</div>
+    <div class="hi">this is the class elements</div>
+    <div class="hi">this is the class elements</div>
+    <div class="hi">this is the class elements</div>
+    <div class="hi">this is the class elements</div>
+    <div class="hi">this is the class elements</div>
+    <button onclick="greet()"> click me</button>
+    <button onclick="greet1()"> click me1</button>
+    <button onclick="greet2()"> click me2</button>
+    <button onclick="greet3()"> reset</button>
+    <script>
+        let id_element = document.getElementById("heading")
+        let tag_elements = document.getElementsByTagName("p")
+        let classname_elements = document.getElementsByClassName('hi')
+        let query_element = document.querySelector('.hi')
+        let query_element1 = document.querySelectorAll('.hi')
+
+
+
+        console.log(id_element.innerHTML = 'modify data')
+
+        id_element.style.color = 'red'
+
+        console.log(tag_elements[1].innerHTML)
+        console.log(classname_elements[1].innerHTML)
+        console.log(query_element.innerText)
+        console.log(query_element1[3].textContent)
+        console.log(document.title)
+        function greet() {
+            document.body.style.backgroundColor = 'purple'
+
+        }
+        function greet1() {
+            document.body.style.backgroundColor = 'green'
+
+        }
+        function greet2() {
+            document.body.style.backgroundColor = 'orange'
+
+        }
+        function greet3() {
+            document.body.style.backgroundColor = 'white'
+
+        } 
+    </script>
+
+</body>
+
+</html>
